@@ -1,28 +1,31 @@
 import types from '~/store/mutation-types';
+import api from '~/static/api';
+import { decode } from 'js-base64';
 
 export default {
   namespaced: true,
   state() {
     return {
-      data: {}
+      goods: []
     }
   },
   mutations: {
     [types.SET_DATA](state, data) {
-      // state.data = data;
+      const jsonData = decode(data);
+      state.goods = JSON.parse(jsonData);
     }
   },
   actions: {
-    async generator({ state, commit, dispatch, getters }) {
+    async fetchGoods({ commit }) {
       try {
-        const data = await this.$axios.$get('http://...');
+        const data = await this.$axios.$get(api.taskFourUrl);
         commit(types.SET_DATA, data);
       } catch (err) {
-
+        console.error(err)
       }
     }
   },
   getters: {
-    getData: ({ data }) => data
+    getGoods: ({ goods }) => goods
   }
 }

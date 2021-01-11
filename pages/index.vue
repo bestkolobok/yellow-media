@@ -14,8 +14,6 @@
 </template>
 
 <script>
-// import debounce from 'lodash/debounce';
-import { mapGetters, mapMutations } from 'vuex';
 
 export default {
   name: 'Home',
@@ -23,22 +21,12 @@ export default {
   data() {
     return {
       tasks: [
-        { name: 'Task One', link: 'task-1' },
-        { name: 'Task Two', link: 'task-2' },
-        { name: 'Task Three', link: 'task-3' },
-        { name: 'Task Four', link: 'task-4' }
+        { name: 'Task One', link: 'tasks/task-1' },
+        { name: 'Task Two', link: 'tasks/task-2' },
+        { name: 'Task Three', link: 'tasks/task-3' },
+        { name: 'Task Four', link: 'tasks/task-4' }
       ]
     }
-  },
-  methods: {
-    ...mapMutations({
-      // SET_BENDING: 'SET_BENDING'
-    })
-  },
-  computed: {
-    ...mapGetters({
-      // getFallingShape: 'getFallingShape',
-    })
   }
 }
 </script>

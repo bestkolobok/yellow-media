@@ -1,5 +1,5 @@
 {
-  "name": "Insider_Test",
+  "name": "Yellow-Media-Test",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -19,6 +19,7 @@
     "@nuxtjs/pwa": "^3.0.2",
     "@nuxtjs/style-resources": "^1.0.0",
     "core-js": "^3.6.5",
+    "js-base64": "^3.6.0",
     "lodash": "^4.17.20",
     "nuxt": "^2.14.6",
     "vee-validate": "^3.4.5"

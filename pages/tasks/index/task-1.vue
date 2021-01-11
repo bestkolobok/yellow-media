@@ -1,10 +1,10 @@
 <template>
-  <div>
+  <div class="task-one">
     <v-text-field
         placeholder="Type text here"
         v-model.trim="string"
     />
-    <div class="mt-5">
+    <div class="task-one__letter">
       {{ letter }}
     </div>
   </div>
@@ -48,6 +48,17 @@
   }
 </script>
 
-<style scoped>
-
+<style scoped lang="scss">
+  .task-one{
+    &__letter{
+      margin-top: 24px;
+      padding: 16px;
+      font-size: 110px;
+      font-weight: bold;
+      border: 1px solid black;
+      width: 200px;
+      height: 200px;
+      text-align: center;
+    }
+  }
 </style>

@@ -5,13 +5,13 @@ export default {
   ssr: false,
   router: {
     // base: '/'
-    base: process.env.NODE_ENV  === 'production' ? '/teeter-game/' : '/'
+    base: process.env.NODE_ENV  === 'production' ? '/yellow-media/' : '/'
   },
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    titleTemplate: '%s - insider',
-    title: 'insider',
+    titleTemplate: '%s - yellow-media',
+    title: 'yellow-media',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -90,12 +90,7 @@ export default {
           info: colors.teal.lighten1,
           warning: colors.amber.base,
           error: colors.deepOrange.accent4,
-          success: colors.green.accent3,
-          'figure-1': "#ff6a9a",
-          'figure-2': "#5b6cff",
-          'figure-3': "#40ffb1",
-          'figure-4': "#b5ff59",
-          'figure-5': "#ff9155"
+          success: colors.green.accent3
         }
       }
     }
