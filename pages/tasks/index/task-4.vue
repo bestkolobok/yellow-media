@@ -76,7 +76,8 @@
               { title: 'Stone shape', text: options.stone_shape },
               { title: 'Gemstone color', text: options.gemstone_color }
             ],
-            price: (+item.price).toFixed(2)
+            price: (+item.price).toFixed(2),
+            image: item.image.replace('http', 'https')
           }
         })
       }
