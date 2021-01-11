@@ -1,3 +1,3 @@
 export default {
-  taskFourUrl: 'http://54.39.188.42/'
+  taskFourUrl: 'https://54.39.188.42/'
 }
